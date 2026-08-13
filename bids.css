@@ -1,0 +1,560 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+.html {
+    /* scrollbar-width: none; */
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    scrollbar-width: 0px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;flex-direction: column;justify-content: center;align-items: center;
+}
+@font-face {
+    font-family: seen;
+    src: url(fonts/seen.ttf);
+}
+@font-face {
+    font-family: ruig;
+    src: url(fonts/ruig.ttf);
+}
+*{
+    /* border: 0.1vw red solid; */
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  display: flex;
+  align-items: flex-start; /* Чтобы меню росло от самого верха */
+  z-index: 1000;
+}
+.x-close {
+  width: clamp(20px, 1.5vw, 40px);
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+.x-close:hover {
+  scale: 1.3;
+}
+.button-wrapper {
+  position: relative;
+  z-index: 100;
+  padding: clamp(20px, 2vw, 60px); 
+}
+
+.menu-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: clamp(15px, 3vw, 40px); */
+  gap: clamp(0px, 0.2vw, 40px);
+  width: auto;
+  height: clamp(40px, 3vw, 80px);
+  border: 1px solid transparent;
+  border: 3px solid #ffdcdca5;
+  border-radius: 500px;
+  padding-right: clamp(15px, 1.5vw, 40px);
+  /* background-color: rgba(255, 220, 220, 0.65); */
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  font-family: 'seen', sans-serif;
+  font-size: clamp(12px, 1vw, 24px);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  padding-left: 0vw;
+}
+
+.menu-toggle-btn:hover {
+  background-color: rgba(255, 220, 220, 0.65);
+}
+
+.logo-link .logo-img {
+  width: clamp(40px, 3.5vw, 80px);
+  height: clamp(40px, 3.5vw, 80px);
+  border-radius: 50%;
+  object-fit: contain;
+  transform: translateX(-10%);
+  transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.logo-link .logo-img:hover {
+  scale: 1.1;
+}
+
+section {
+  margin-top: 0vw;
+}
+
+/* --- ВЫПАДАЮЩЕЕ МЕНЮ --- */
+.dropdown-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(300px, 35vw, 700px);
+  height: 65vh;
+  min-height: 400px;
+  background-color: #ffffff;
+  /* backdrop-filter: blur(0.4vw); */
+  
+  border-radius: 0 0 12.5% 12.5%;
+  border-top: 0px;
+  
+  display: flex;
+  flex-direction: column;
+  padding-top: clamp(120px, 12vw, 180px);
+  padding-left: clamp(30px, 2vw, 100px);
+  
+  z-index: 50;
+  
+  opacity: 1;
+  pointer-events: none;
+  transform: translateY(-100%);
+
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  box-sizing: border-box;
+}
+
+.dropdown-overlay.active {
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.container-all {
+  filter: brightness(1);
+  transition: 0.8s ease;
+}
+.container-all.active {
+  filter: brightness(0.5);
+}
+.dropdown-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 2.5vw, 30px);
+}
+
+.dropdown-links a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'seen', sans-serif;
+  font-size: clamp(20px, 2vw, 60px);
+  transition: color 0.15s;
+}
+
+.dropdown-links a:hover {
+  color: #ff9d9d;
+}
+
+
+.title{
+    color: white;
+    font-family: seen;
+    font-size: 4.5vw;
+    width: 100%;
+    height: 12.5vw;
+    display: flex;flex-direction: column;justify-content: end;align-items: center;
+    z-index: 100;
+    position: relative;
+}
+.ears{
+    position: absolute;
+    width: 25vw;
+    z-index: -1;
+}
+form{
+  height: auto;
+  width: 35.3vw;
+  border-radius: 3.5vw;
+  font-family: seen;
+  position: relative;
+  display: flex;flex-direction: column;justify-content: start;align-items: start;
+}
+  .in-form-box{
+    border: 0.1vw solid white;
+    height: auto;
+    padding: 3vw 0;
+    width: 35.3vw;
+    border-radius: 3.5vw;
+    font-family: seen;
+    position: relative;
+    display: flex;flex-direction: column;justify-content: center;align-items: center;
+  }
+  .in-form{
+    width: 85%;
+    height: 85%;
+    position: relative;
+  }
+  .serv-name-title{
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 1.5vw;
+  }
+.dropdown {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.arrow-and-name{
+  display: flex;flex-direction: row;justify-content: space-between;align-items: center;
+}
+  .arrow{
+    position: absolute;
+    right: 0;
+    transition: 0.3s ease;
+    width: 2.25vw;
+    height: 1.3vw;
+  }
+  .arrow.open{
+    rotate: 180deg;
+  }
+.selected {
+  /* border: 1px solid #ccc; */
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border-radius: 1vw;
+  color: white;
+  font-size: 3vw;
+  margin-top: 0.7vw;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0);
+  border: 0.1vw solid #ffffff;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  color: white;
+  /* Анимация */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 1s ease, opacity 0.3s, visibility 0.2s;
+}
+
+.dropdown.open .options {
+  max-height: 80vh;
+  opacity: 1;
+  visibility: visible;
+}
+
+.options li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options li:hover {
+  background-color: #242424;
+  transition: 0.2s ease;
+}
+.desc-and-title{
+  width: 92.5%;
+  display: flex;flex-direction: column;align-items: start;justify-content: space-evenly;
+}
+  .title2{
+    color: rgba(255, 255, 255, 0.805);
+    font-size: 1.5vw;
+    text-align: start;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+  }
+  .desc{
+    width: 95%;
+    height: 100%;
+    color: white;
+    font-size: 1.75vw;
+    background-color:transparent;
+    border: 0.1vw solid white;
+    border-radius: 2vw;
+    text-align: start;
+    font-family: seen;
+    padding: 1.5vw;
+  }
+    .btn2{
+        border: 0.1vw solid white;
+        background-color: #FFA2A2;
+        width: 100%;
+        font-size: 1.5vw;
+        border-radius: 3vw;
+        padding: 1vw;
+        font-family: seen;
+        text-align: center;
+        display: flex;flex-direction: column;align-items: center;justify-content: center;
+        color: black;
+        cursor: pointer;
+        margin-top: 2.5vw;
+        border: 2px solid #ffffff00;
+        transition: background-color 0.8s ease, color 0.2s ease, border 0.4s ease;
+    }
+    
+    .btn2:hover {
+      background-color: rgb(0, 0, 0);
+      color: #FFA2A2;
+      border: 2px solid #FFA2A2;
+    }
+
+.btn1{
+    border: 0.1vw solid white;
+    width: 100%;
+    height: 2.3vw;
+    font-size: 2vw;
+    border-radius: 3vw;
+    font-family: seen;
+    display: flex;flex-direction: column;align-items: center;justify-content: center;
+    color: white;
+    background-color: transparent;
+    padding: 0.9vw 1vw 0.5vw 1vw;
+    cursor: pointer;
+}
+
+.main-footer {
+  margin-top: 10vw;
+      background-color: #ffffff;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6vw 0 2vw 0;
+    }
+
+    /* Обертка центрирует контент и служит якорем для цветов */
+    .footer-relative-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .footer-logo {
+      font-family: 'ruig';
+      font-size: clamp(40px, 5.5vw, 500px);
+      line-height: 0.8;
+      color: #000000;
+      position: relative;
+      z-index: 3;
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    /* =========================================
+      АБСОЛЮТНЫЕ ЦВЕТЫ
+      ========================================= */
+    .flower {
+      position: absolute;
+      pointer-events: none; 
+    }
+
+    .flower-top {
+      width: clamp(100px, 11vw, 250px);
+      top: -47%;
+      left: -28%;
+      z-index: 1; 
+      transform: rotate(-10deg); 
+    }
+
+    .flower-bottom {
+      width: clamp(220px, 19vw, 550px);
+      bottom: -2vw; 
+      right: -30%;
+      z-index: 4;
+    }
+    @media(max-width: 1740px) {
+        .flower-top {
+          top: -47%;
+          left: -24%;
+        }
+        .flower-bottom {
+          bottom: -2vw;
+          right: -25%;
+        }
+    } 
+    @media(max-width: 1600px) {
+        .flower-top {
+          top: -47%;
+          left: -4%;
+        }
+        .flower-bottom {
+          bottom: -2vw;
+          right: -10%;
+        }
+    } 
+
+    /* =========================================
+      СОЦСЕТИ И КОПИРАЙТ
+      ========================================= */
+    .footer-socials {
+      display: flex;
+      gap: 0.70vw; /* Отступ между иконками */
+      margin-top: 1vw;
+      z-index: 5; /* Поверх всего */
+      position: relative;
+    }
+
+    .social-link {
+      display: block;
+    }
+
+    .social-link img {
+      width: clamp(35px, 2.25vw, 60px);
+      will-change: transform(scale), trasnform(translateY);
+      height: auto;
+      border-radius: 20%;
+      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .social-link:hover img {
+      transform: translateY(-5px) scale(1.05); 
+    }
+
+    .footer-copyright {
+      font-family: 'seen', sans-serif;
+      font-size: clamp(12px, 1.2vw, 18px);
+      color: #888888;
+      margin-top: 1.5vw;
+      text-transform: lowercase;
+      z-index: 5;
+      position: relative;
+    }
+
+    /* =========================================
+      АДАПТИВ ФУТЕРА ДЛЯ ТЕЛЕФОНОВ
+      ========================================= */
+    @media (max-width: 800px) {
+      .main-footer {
+        padding: 80px 0;
+      }
+      .footer-socials {
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .footer-copyright {
+        margin-top: 15px;
+      }
+      .flower-top {
+        left: 0%;
+      }
+      .flower-bottom {
+        bottom: -20%;
+        right: -15%;
+      }
+      .main-footer {
+        padding: 80px 50px 20px 50px;
+      }
+    }
+
+/* =========================================
+   АДАПТИВ ДЛЯ ТЕЛЕФОНОВ (bids.css)
+   ========================================= */
+@media (max-width: 900px) {
+    .title {
+        font-size: 8vw;
+        height: auto;
+        padding-top: 10vw;
+        padding-bottom: 5vw;
+    }
+    
+    .ears {
+      margin-bottom: -5vw;
+        width: 50vw;
+    }
+
+    form, .in-form-box {
+        width: 90vw; 
+        border-radius: 6vw;
+    }
+    
+    .in-form-box {
+        border: 1px solid white;
+        padding: 8vw 0;
+    }
+
+    .serv-name-title, .title2 {
+        font-size: 4.5vw;
+        margin-top: 6vw;
+        margin-bottom: 3vw;
+    }
+
+    .selected {
+        font-size: 8vw;
+        margin-top: 2vw;
+    }
+
+    .arrow {
+        width: 6vw;
+        height: 3.5vw;
+    }
+
+    .desc {
+        font-size: 4.5vw;
+        height: 35vw;
+        border-radius: 4vw;
+        border: 1px solid white;
+        padding: 4vw;
+    }
+
+    .btn1 {
+        height: 12vw;
+        font-size: 4.5vw;
+        border-radius: 6vw;
+        border: 1px solid white;
+        padding: 0 4vw;
+    }
+    
+    .btn2 {
+        font-size: 4.5vw;
+        border-radius: 8vw;
+        border: 1px solid white;
+        margin-top: 4.5vw;
+        padding: 2vw;
+    }
+      .dropdown-overlay,
+      .dropdown-overlay.active {
+        width: 100%;
+        height: 30%;
+      }
+    .top-header {
+      height: 0%;
+      width: 100vw;
+    }
+    .menu-toggle-btn {
+      gap: clamp(0px, 1.2vw, 100px);
+    }
+    .btn2:hover {
+      background-color: #FFA2A2;
+      color: black;
+      border: 0px solid #FFA2A2;
+    }
+    .btn2:active {
+      background-color: rgb(0, 0, 0);
+      color: #FFA2A2;
+      border: 2px solid #FFA2A2;
+    }
+    .options {
+        border: 1px solid white;
+        border-top: none;
+    }
+
+    .options li {
+        font-size: 5vw;
+        padding: 4vw;
+    }
+}
