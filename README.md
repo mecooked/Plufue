@@ -1,4 +1,4 @@
-# "Plufue" - Корпоративный сайт-портфолио веб-агентства (Fullstack)
+# "Plufue" – Корпоративный сайт-портфолио веб-агентства (Fullstack)
 
 <img width="4281" height="1605" alt="Component 38 (2)" src="https://github.com/user-attachments/assets/77665213-a85e-4b7c-a77b-a287df5ccdaf" />
 
@@ -7,11 +7,11 @@
 
 **Главная задача проекта:** создать премиальный визуальный опыт для пользователя с помощью библиотеки GSAP и обеспечить владельца сайта безопасным и удобным инструментом для модерации портфолио.
 
-<img width="49.5%" height="49.5%" alt="Highlight-1" src="https://github.com/user-attachments/assets/25bb9d9c-183b-48c9-89d7-2b481cd0726a" />
-<img width="49.5%" height="49.5%" alt="Highlight-2" src="https://github.com/user-attachments/assets/3655d9bb-9a7f-4f7d-b397-2f5686ebe69a" />
-Главный экран и Витрина избранных проектов
+<br>
 
-<img width="75%" height="75%" align="center" alt="Highlight-3" src="https://github.com/user-attachments/assets/993dade6-9d12-4b2c-bee1-fb0b3177d822" />
+<img width="75%" height="49.5%" alt="Highlight-1" src="https://github.com/user-attachments/assets/25bb9d9c-183b-48c9-89d7-2b481cd0726a" />
+<img width="75%" height="49.5%" alt="Highlight-2" src="https://github.com/user-attachments/assets/3655d9bb-9a7f-4f7d-b397-2f5686ebe69a" />
+<img width="75%" height="100%" align="center" alt="Highlight-3" src="https://github.com/user-attachments/assets/993dade6-9d12-4b2c-bee1-fb0b3177d822" />
 
 
 ## ✨ Ключевой функционал (Что реализовано)
