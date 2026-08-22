@@ -16,6 +16,8 @@ https://github.com/user-attachments/assets/d2a5a965-52b9-454a-b27e-a1efad92a63e
 
 https://github.com/user-attachments/assets/79b06d84-d75e-4427-a654-a7dfcf936c49
 
+https://github.com/user-attachments/assets/ef1880da-dad3-47a4-9efd-3ccdc8417983
+
 ### 2. Динамические страницы проектов
 Каждый проект открывается на отдельной странице, которая генерируется динамически на основе единого шаблона `project.php?id=X` (данные тянутся из БД).
 
