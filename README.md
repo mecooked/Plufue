@@ -33,10 +33,16 @@ https://github.com/user-attachments/assets/30e417d7-f780-4519-a5ac-f77d7d149d28
 - **Управление проектами:** Добавление новых кейсов и загрузка обложек на сервер.
 - **Управление лидами:** Просмотр и удаление заявок, оставленных клиентами через форму обратной связи.
 
-<img width="49.5%" height="49.5%" alt="Highlight-1" src="https://github.com/user-attachments/assets/25bb9d9c-183b-48c9-89d7-2b481cd0726a" />
+https://github.com/user-attachments/assets/1bfe913a-aafb-4cf1-bfe6-9d6235a9f53f
+
+<!-- <img width="49.5%" height="49.5%" alt="Highlight-1" src="https://github.com/user-attachments/assets/25bb9d9c-183b-48c9-89d7-2b481cd0726a" />
 <img width="49.5%" height="49.5%" alt="Highlight-2" src="https://github.com/user-attachments/assets/3655d9bb-9a7f-4f7d-b397-2f5686ebe69a" />
+
+
+
+
 <br>
-<img width="100%" height="100%" align="center" alt="Highlight-3" src="https://github.com/user-attachments/assets/993dade6-9d12-4b2c-bee1-fb0b3177d822" />
+<img width="100%" height="100%" align="center" alt="Highlight-3" src="https://github.com/user-attachments/assets/993dade6-9d12-4b2c-bee1-fb0b3177d822" /> -->
 
 <br>
 
