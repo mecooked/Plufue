@@ -11,11 +11,10 @@
 
 Проект разрабатывался в качестве дипломной работы. Сайт был создан в учебных целях. *"Plufue" - вымышленное агенство*
 
-**Полные страницы здесь**: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Untitled?t=Db38TUU2RuiNeJm7-1
+**Макет в FIGMA**: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Untitled?t=Db38TUU2RuiNeJm7-1
 
 ## 🔹 Тестирование
-· [Отчёт о тестировании (PDF)](test-report-plufue.pdf) <br>
-· Макет в Figma: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Plufue-%7C-Full-Pages?node-id=0-1&t=EsdxwaephpJx2YlB-1
+· [Отчёт о тестировании (PDF) - Открыть](test-report-plufue.pdf) [Скачать](https://github.com/user-attachments/files/35183625/test-report-plufue.pdf)
 
 
 ## !!! Disclaimer (Правовая информация)
