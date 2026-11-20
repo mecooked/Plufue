@@ -14,7 +14,7 @@
 **Макет в FIGMA**: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Untitled?t=Db38TUU2RuiNeJm7-1
 
 ## 🔹 Тестирование
-· [Отчёт о тестировании (PDF) - Открыть](test-report-plufue.pdf) [Скачать](https://github.com/user-attachments/files/35183625/test-report-plufue.pdf)
+· Отчёт о тестировании (PDF) - [Открыть](test-report-plufue.pdf) [Скачать](https://github.com/user-attachments/files/35183625/test-report-plufue.pdf)
 
 
 ## !!! Disclaimer (Правовая информация)
