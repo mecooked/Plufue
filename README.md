@@ -14,7 +14,7 @@
 **Полные страницы здесь**: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Untitled?t=Db38TUU2RuiNeJm7-1
 
 ## 🔹 Тестирование
-[Отчёт о тестировании (PDF)](test-report-plufue.pdf) · Макет в Figma: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Plufue-%7C-Full-Pages?node-id=0-1&t=EsdxwaephpJx2YlB-1
+· [Отчёт о тестировании (PDF)](test-report-plufue.pdf) · Макет в Figma: https://www.figma.com/design/X6V3uVJHWqeF0xgTZoZbCP/Plufue-%7C-Full-Pages?node-id=0-1&t=EsdxwaephpJx2YlB-1
 
 
 ## !!! Disclaimer (Правовая информация)
